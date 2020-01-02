@@ -2,30 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bc9bf3c1-9d6e-484b-992a-a6886feabb34" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/../examples/Fruits.postman" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../examples/fruits-api.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../fruits-specs/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../fruits-specs/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../fruits-specs/.idea/copyright/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../fruits-specs/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../fruits-specs/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../fruits-specs/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../fruits-specs/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../fruits-specs/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../fruits-specs/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../fruits-specs/executableSpecification.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../fruits-specs/fruitsSpecification.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../fruits-specs/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../fruits-specs/src/main/resources/api-spec.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../fruits-specs/src/test/java/io/avalia/fruits/api/spec/SpecificationTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../fruits-specs/src/test/java/io/avalia/fruits/api/spec/helpers/Environment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../fruits-specs/src/test/java/io/avalia/fruits/api/spec/steps/CreationSteps.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../fruits-specs/src/test/resources/environment.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../fruits-specs/src/test/resources/scenarios/creation.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_cal10n_cal10n_api_0_8_1.xml" afterDir="false" />
@@ -121,9 +99,11 @@
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_mail_mail_1_4_4.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_mail_mailapi_1_4_3.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_validation_validation_api_1_1_0_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_validation_validation_api_2_0_1_Final.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_bind_jaxb_api_2_3_0.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__joda_time_joda_time_2_10_5.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_18.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_10_2.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_jopt_simple_jopt_simple_5_0_3.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_4.xml" afterDir="false" />
@@ -227,40 +207,46 @@
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_threeten_threetenbp_1_4_0.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_23.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_25.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-server/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-server/.idea/copyright/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-server/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-server/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-server/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-server/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-server/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-server/.swagger-codegen-ignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-server/.swagger-codegen/VERSION" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-server/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-server/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-server/src/main/java/io/avalia/fruits/RFC3339DateFormat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-server/src/main/java/io/avalia/fruits/Swagger2SpringBoot.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-server/src/main/java/io/avalia/fruits/api/endpoints/FruitsApiController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-server/src/main/java/io/avalia/fruits/api/exceptions/ApiException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-server/src/main/java/io/avalia/fruits/api/exceptions/NotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-server/src/main/java/io/avalia/fruits/api/util/ApiOriginFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-server/src/main/java/io/avalia/fruits/api/util/ApiResponseMessage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-server/src/main/java/io/avalia/fruits/configuration/HomeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-server/src/main/java/io/avalia/fruits/configuration/SwaggerDocumentationConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-server/src/main/java/io/avalia/fruits/entities/FruitEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-server/src/main/java/io/avalia/fruits/repositories/FruitRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-server/src/main/resources/api-spec.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-server/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-server/swagger-spring.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-server/src/main/java/io/avalia/users/repositories/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../users-specs/src/test/resources/environment.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fruits-specs/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/../users-specs/.idea/.name" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fruits-specs/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../users-specs/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fruits-specs/.idea/copyright/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../users-specs/.idea/copyright/profiles_settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fruits-specs/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../users-specs/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fruits-specs/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../users-specs/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fruits-specs/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../users-specs/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fruits-specs/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../users-specs/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fruits-specs/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../users-specs/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fruits-specs/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../users-specs/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fruits-specs/executableSpecification.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../users-specs/executableSpecification.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fruits-specs/fruitsSpecification.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../users-specs/usersSpecification.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fruits-specs/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../users-specs/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fruits-specs/src/main/resources/api-spec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../users-specs/src/main/resources/api-spec.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fruits-specs/src/test/java/io/avalia/fruits/api/spec/SpecificationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../users-specs/src/test/java/io/avalia/users/api/spec/SpecificationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fruits-specs/src/test/java/io/avalia/fruits/api/spec/helpers/Environment.java" beforeDir="false" afterPath="$PROJECT_DIR$/../users-specs/src/test/java/io/avalia/users/api/spec/helpers/Environment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fruits-specs/src/test/java/io/avalia/fruits/api/spec/steps/CreationSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/../users-specs/src/test/java/io/avalia/users/api/spec/steps/CreationSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fruits-specs/src/test/resources/environment.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fruits-specs/src/test/resources/scenarios/creation.feature" beforeDir="false" afterPath="$PROJECT_DIR$/../users-specs/src/test/resources/scenarios/creation.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-server/src/main/java/io/avalia/fruits/RFC3339DateFormat.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-server/src/main/java/io/avalia/users/RFC3339DateFormat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-server/src/main/java/io/avalia/fruits/Swagger2SpringBoot.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-server/src/main/java/io/avalia/users/Swagger2SpringBoot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-server/src/main/java/io/avalia/fruits/api/endpoints/FruitsApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-server/src/main/java/io/avalia/users/api/endpoints/UsersApiController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-server/src/main/java/io/avalia/fruits/api/exceptions/ApiException.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-server/src/main/java/io/avalia/users/api/exceptions/ApiException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-server/src/main/java/io/avalia/fruits/api/exceptions/NotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-server/src/main/java/io/avalia/users/api/exceptions/NotFoundException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-server/src/main/java/io/avalia/fruits/api/util/ApiOriginFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-server/src/main/java/io/avalia/users/api/util/ApiOriginFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-server/src/main/java/io/avalia/fruits/api/util/ApiResponseMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-server/src/main/java/io/avalia/users/api/util/ApiResponseMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-server/src/main/java/io/avalia/fruits/configuration/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-server/src/main/java/io/avalia/users/configuration/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-server/src/main/java/io/avalia/fruits/configuration/SwaggerDocumentationConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-server/src/main/java/io/avalia/users/configuration/SwaggerDocumentationConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-server/src/main/java/io/avalia/fruits/entities/FruitEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-server/src/main/java/io/avalia/users/entities/UserEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-server/src/main/java/io/avalia/fruits/repositories/FruitRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-server/src/main/resources/api-spec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-server/src/main/resources/api-spec.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-server/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-server/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-server/swagger-spring.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-server/swagger-spring.iml" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -268,6 +254,43 @@
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="MySQL - users@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="MySQL - users@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="MySQL - users@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="users: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="MySQL - users@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="users: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="Users: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+    </expand>
+    <select />
   </component>
   <component name="FavoritesManager">
     <favorites_list name="full-project" />
@@ -286,14 +309,15 @@
     <servers />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
-    <option name="width" value="1834" />
-    <option name="height" value="989" />
-  </component>
   <component name="ProjectId" id="1UPYdsgUfwl33XpYQKBoykg4ROz" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelOrder2" value="2" />
@@ -315,8 +339,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="recentsLimit" value="5" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
-    <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -329,19 +352,13 @@
       <recent name="io.avalia.fruits" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
   <component name="RunManager" selected="Spring Boot.Execute with Spring Boot">
+    <configuration default="true" type="Applet">
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -448,12 +465,6 @@
       <setting name="testKind" value="Class" />
       <setting name="showProgressMessages" value="true" />
       <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
-      <module name="" />
-      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
-      <option name="PROGRAM_PARAMETERS" />
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="Attests">
@@ -582,14 +593,25 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="true" type="Applet">
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="Application" factoryName="Application">
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    <configuration name="All Features in: fruits-specs (1)" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="1.2" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/../fruits-specs" />
+      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
+      <module name="usersSpecification" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome" />
+      <option name="SUGGESTED_NAME" value="All Features in: fruits-specs" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cucumber.api.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -597,7 +619,7 @@
     <configuration name="All Features in: fruits-specs" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="GLUE" value="io.avalia.fruits.api.spec.steps" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
-      <module name="fruitsSpecification" />
+      <module name="usersSpecification" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome" />
       <extension name="coverage">
         <pattern>
@@ -614,7 +636,7 @@
       <option name="FILE_PATH" value="$PROJECT_DIR$/../fruits-specs/src/test/resources/scenarios/creation.feature" />
       <option name="GLUE" value="io.avalia.fruits.api.spec.steps" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
-      <module name="fruitsSpecification" />
+      <module name="usersSpecification" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome" />
       <option name="SUGGESTED_NAME" value="Feature: creation" />
       <extension name="coverage">
@@ -630,7 +652,7 @@
     <configuration name="Feature: creation" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="GLUE" value="io.avalia.fruits.api.spec.steps" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
-      <module name="fruitsSpecification" />
+      <module name="usersSpecification" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome" />
       <extension name="coverage">
         <pattern>
@@ -651,7 +673,7 @@
     </configuration>
     <configuration name="Execute with Spring Boot" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="swagger-spring" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="io.avalia.fruits.Swagger2SpringBoot" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="io.avalia.users.Swagger2SpringBoot" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -661,6 +683,15 @@
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <properties />
       <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file enabled="true" id="idea.log" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -677,11 +708,13 @@
     <list>
       <item itemvalue="Cucumber java.All Features in: fruits-specs" />
       <item itemvalue="Cucumber java.Feature: creation" />
-      <item itemvalue="Spring Boot.Execute with Spring Boot" />
       <item itemvalue="Cucumber java.Feature: creation (1)" />
+      <item itemvalue="Cucumber java.All Features in: fruits-specs (1)" />
+      <item itemvalue="Spring Boot.Execute with Spring Boot" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Cucumber java.All Features in: fruits-specs (1)" />
         <item itemvalue="Cucumber java.Feature: creation (1)" />
         <item itemvalue="Cucumber java.Feature: creation" />
         <item itemvalue="Cucumber java.All Features in: fruits-specs" />
@@ -693,6 +726,26 @@
       <projects_view />
     </option>
   </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:MySQL - users@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+            </expand>
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="bc9bf3c1-9d6e-484b-992a-a6886feabb34" name="Default" comment="" />
@@ -702,6 +755,8 @@
       <updated>1510217210644</updated>
       <workItem from="1510217218267" duration="3250000" />
       <workItem from="1575259789900" duration="3706000" />
+      <workItem from="1577967189962" duration="3088000" />
+      <workItem from="1577970299430" duration="14176000" />
     </task>
     <servers />
   </component>
@@ -713,113 +768,102 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
   </component>
+  <component name="WindowStateProjectService">
+    <state x="555" y="188" width="804" height="677" key="#Assign_Data_Sources" timestamp="1577976879643">
+      <screen x="0" y="0" width="1920" height="1052" />
+    </state>
+    <state x="555" y="188" width="804" height="677" key="#Assign_Data_Sources/0.0.1920.1052/1920.0.1920.1080@0.0.1920.1052" timestamp="1577976879643" />
+    <state x="555" y="188" width="804" height="677" key="#Inspections" timestamp="1577976723790">
+      <screen x="0" y="0" width="1920" height="1052" />
+    </state>
+    <state x="555" y="188" width="804" height="677" key="#Inspections/0.0.1920.1052/1920.0.1920.1080@0.0.1920.1052" timestamp="1577976723790" />
+    <state x="75" y="187" width="804" height="677" key="#Notifications" timestamp="1577970260092">
+      <screen x="0" y="0" width="1920" height="1052" />
+    </state>
+    <state x="75" y="187" width="804" height="677" key="#Notifications/0.0.1920.1052/1920.0.1920.1080@0.0.1920.1052" timestamp="1577970260092" />
+    <state x="555" y="188" width="804" height="677" key="#Project_Structure" timestamp="1577969690183">
+      <screen x="0" y="0" width="1920" height="1052" />
+    </state>
+    <state x="555" y="188" width="804" height="677" key="#Project_Structure/0.0.1920.1052/1920.0.1920.1080@0.0.1920.1052" timestamp="1577969690183" />
+    <state x="555" y="188" width="804" height="677" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1577976812570">
+      <screen x="0" y="0" width="1920" height="1052" />
+    </state>
+    <state x="555" y="188" width="804" height="677" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1052/1920.0.1920.1080@0.0.1920.1052" timestamp="1577976812570" />
+    <state x="504" y="0" width="899" height="1052" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1577968100032">
+      <screen x="0" y="0" width="1920" height="1052" />
+    </state>
+    <state x="504" y="0" width="899" height="1052" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1052/1920.0.1920.1080@0.0.1920.1052" timestamp="1577968100032" />
+    <state width="1874" height="278" key="GridCell.Tab.0.bottom" timestamp="1577984344570">
+      <screen x="0" y="0" width="1920" height="1052" />
+    </state>
+    <state width="1874" height="278" key="GridCell.Tab.0.bottom/0.0.1920.1052/1920.0.1920.1080@0.0.1920.1052" timestamp="1577984344570" />
+    <state width="1874" height="278" key="GridCell.Tab.0.center" timestamp="1577984344570">
+      <screen x="0" y="0" width="1920" height="1052" />
+    </state>
+    <state width="1874" height="278" key="GridCell.Tab.0.center/0.0.1920.1052/1920.0.1920.1080@0.0.1920.1052" timestamp="1577984344570" />
+    <state width="1874" height="278" key="GridCell.Tab.0.left" timestamp="1577984344570">
+      <screen x="0" y="0" width="1920" height="1052" />
+    </state>
+    <state width="1874" height="278" key="GridCell.Tab.0.left/0.0.1920.1052/1920.0.1920.1080@0.0.1920.1052" timestamp="1577984344570" />
+    <state width="1874" height="278" key="GridCell.Tab.0.right" timestamp="1577984344570">
+      <screen x="0" y="0" width="1920" height="1052" />
+    </state>
+    <state width="1874" height="278" key="GridCell.Tab.0.right/0.0.1920.1052/1920.0.1920.1080@0.0.1920.1052" timestamp="1577984344570" />
+    <state width="1874" height="278" key="GridCell.Tab.1.bottom" timestamp="1577984344570">
+      <screen x="0" y="0" width="1920" height="1052" />
+    </state>
+    <state width="1874" height="278" key="GridCell.Tab.1.bottom/0.0.1920.1052/1920.0.1920.1080@0.0.1920.1052" timestamp="1577984344570" />
+    <state width="1874" height="278" key="GridCell.Tab.1.center" timestamp="1577984344570">
+      <screen x="0" y="0" width="1920" height="1052" />
+    </state>
+    <state width="1874" height="278" key="GridCell.Tab.1.center/0.0.1920.1052/1920.0.1920.1080@0.0.1920.1052" timestamp="1577984344570" />
+    <state width="1874" height="278" key="GridCell.Tab.1.left" timestamp="1577984344570">
+      <screen x="0" y="0" width="1920" height="1052" />
+    </state>
+    <state width="1874" height="278" key="GridCell.Tab.1.left/0.0.1920.1052/1920.0.1920.1080@0.0.1920.1052" timestamp="1577984344570" />
+    <state width="1874" height="278" key="GridCell.Tab.1.right" timestamp="1577984344570">
+      <screen x="0" y="0" width="1920" height="1052" />
+    </state>
+    <state width="1874" height="278" key="GridCell.Tab.1.right/0.0.1920.1052/1920.0.1920.1080@0.0.1920.1052" timestamp="1577984344570" />
+    <state width="1874" height="343" key="GridCell.Tab.2.bottom" timestamp="1577981066735">
+      <screen x="0" y="0" width="1920" height="1052" />
+    </state>
+    <state width="1874" height="343" key="GridCell.Tab.2.bottom/0.0.1920.1052/1920.0.1920.1080@0.0.1920.1052" timestamp="1577981066735" />
+    <state width="1874" height="343" key="GridCell.Tab.2.center" timestamp="1577981066735">
+      <screen x="0" y="0" width="1920" height="1052" />
+    </state>
+    <state width="1874" height="343" key="GridCell.Tab.2.center/0.0.1920.1052/1920.0.1920.1080@0.0.1920.1052" timestamp="1577981066735" />
+    <state width="1874" height="343" key="GridCell.Tab.2.left" timestamp="1577981066735">
+      <screen x="0" y="0" width="1920" height="1052" />
+    </state>
+    <state width="1874" height="343" key="GridCell.Tab.2.left/0.0.1920.1052/1920.0.1920.1080@0.0.1920.1052" timestamp="1577981066735" />
+    <state width="1874" height="343" key="GridCell.Tab.2.right" timestamp="1577981066735">
+      <screen x="0" y="0" width="1920" height="1052" />
+    </state>
+    <state width="1874" height="343" key="GridCell.Tab.2.right/0.0.1920.1052/1920.0.1920.1080@0.0.1920.1052" timestamp="1577981066735" />
+    <state x="456" y="162" key="SettingsEditor" timestamp="1577976387713">
+      <screen x="0" y="0" width="1920" height="1052" />
+    </state>
+    <state x="456" y="162" key="SettingsEditor/0.0.1920.1052/1920.0.1920.1080@0.0.1920.1052" timestamp="1577976387713" />
+    <state x="613" y="145" width="687" height="764" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1577983894552">
+      <screen x="0" y="0" width="1920" height="1052" />
+    </state>
+    <state x="613" y="145" width="687" height="764" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1052/1920.0.1920.1080@0.0.1920.1052" timestamp="1577983894552" />
+    <state x="622" y="240" key="run.anything.popup" timestamp="1577978065218">
+      <screen x="0" y="0" width="1920" height="1052" />
+    </state>
+    <state x="622" y="240" key="run.anything.popup/0.0.1920.1052/1920.0.1920.1080@0.0.1920.1052" timestamp="1577978065218" />
+  </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <last-edited>No facets are configured</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>fruitsSpecification</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-                <option value="0.6" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectJDKs.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>Maven: antlr:antlr:2.7.7</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ScopeChooserConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
   </component>
 </project>

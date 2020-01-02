@@ -49,10 +49,10 @@
                                 <useBeanValidation>true</useBeanValidation>
                                 <interfaceOnly>true</interfaceOnly>
                                 <delegatePattern>false</delegatePattern>
-                                <apiPackage>io.avalia.fruits.api</apiPackage>
-                                <configPackage>io.avalia.fruits.config</configPackage>
-                                <basePackage>io.avalia.fruits</basePackage>
-                                <modelPackage>io.avalia.fruits.api.model</modelPackage>
+                                <apiPackage>io.avalia.users.api</apiPackage>
+                                <configPackage>io.avalia.users.config</configPackage>
+                                <basePackage>io.avalia.users</basePackage>
+                                <modelPackage>io.avalia.users.api.model</modelPackage>
                             </configOptions>
                         </configuration>
                     </execution>
@@ -107,6 +107,11 @@
             <groupId>org.openapitools</groupId>
             <artifactId>jackson-databind-nullable</artifactId>
             <version>0.2.0</version>
+        </dependency>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <scope>runtime</scope>
         </dependency>
     <!-- Bean Validation API support -->
     <dependency>
