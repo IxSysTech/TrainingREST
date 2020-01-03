@@ -1,0 +1,187 @@
+swagger: '2.0'
+info:
+  version: '0.1.0'
+  title: my simple api
+  description: An API to demonstrate Swagger
+host: localhost:8080
+basePath: /api
+schemes:
+  - http
+paths:
+  /passenger/{id}:
+    get:
+      description: Get passenger by Id
+      operationId: getPassengerById
+      parameters:
+        - in: path
+          name: id
+          description: passenger id
+          required: true
+          type: integer
+      produces:
+        - application/json
+      responses:
+        '200':
+          description: success
+          schema:
+            type: object
+            items:
+              $ref: '#/definitions/Passenger'
+        404:
+          description: passenger not found
+    delete:
+      description: delete passenger by Id
+      operationId: deletePassengerById
+      parameters:
+        - in: path
+          name: id
+          description: passenger id
+          required: true
+          type: integer
+      produces:
+        - application/json
+      responses:
+        '200':
+          description: success
+          schema:
+            type: object
+            items:
+              $ref: '#/definitions/Passenger'
+        404:
+          description: passenger not found
+    put:
+      description: update passenger by Id
+      operationId: updatePassengerById
+      parameters:
+        - in: path
+          name: id
+          description: passenger id
+          required: true
+          type: integer
+      produces:
+        - application/json
+      responses:
+        '200':
+          description: success
+          schema:
+            type: object
+            items:
+              $ref: '#/definitions/Passenger'
+        404:
+          description: passenger not found
+  /passenger/create:
+    post:
+      description: Create a passenger
+      operationId: createPassenger
+      consumes:
+        - application/json
+      parameters:
+        - in: body
+          name: Passenger
+          required: true
+          schema:
+            $ref: '#/definitions/Passenger'
+      responses:
+        '201':
+          description: created
+          schema:
+            type: object
+  /flight/{id}:
+    get:
+      description: Get flight by Id
+      operationId: getFlightById
+      parameters:
+        - in: path
+          name: id
+          description: flight id
+          required: true
+          type: integer
+      produces:
+        - application/json
+      responses:
+        '200':
+          description: success
+          schema:
+            type: object
+            items:
+              $ref: '#/definitions/Flight'
+        404:
+          description: Flight not found
+    delete:
+      description: Delete flight by Id
+      operationId: deleteFlightById
+      parameters:
+        - in: path
+          name: id
+          description: flight id
+          required: true
+          type: integer
+      produces:
+        - application/json
+      responses:
+        '200':
+          description: success
+          schema:
+            type: object
+            items:
+              $ref: '#/definitions/Flight'
+        404:
+          description: flight not found
+    put:
+      description: Update flight by Id
+      operationId: updateFlightById
+      parameters:
+        - in: path
+          name: id
+          description: passenger id
+          required: true
+          type: integer
+      produces:
+        - application/json
+      responses:
+        '200':
+          description: success
+          schema:
+            type: object
+            items:
+              $ref: '#/definitions/Passenger'
+        404:
+          description: passenger not found
+  /flight/create:
+    post:
+      description: Create a flight
+      operationId: createFlight
+      consumes:
+        - application/json
+      parameters:
+        - in: body
+          name: Flight
+          required: true
+          schema:
+            $ref: '#/definitions/Flight'
+      responses:
+        '201':
+          description: created
+          schema:
+            type: object
+definitions:
+  Passenger:
+    type: object
+    properties:
+      id:
+        type: integer
+      firstname:
+        type: string
+      lastname:
+        type: string
+  Flight:
+    type: object
+    properties:
+      id:
+        type: integer
+      start:
+        type: string
+      end:
+        type: string
+      time:
+        type: string
