@@ -12,7 +12,7 @@ public class PassengerEntity implements Serializable {
 
     @Id
     @Column(name = "id")
-    private int id;
+    private long id;
 
     @Column(name = "firstname")
     private String firstname;
@@ -20,7 +20,7 @@ public class PassengerEntity implements Serializable {
     @Column(name = "lastname")
     private String lastname;
 
-    public int getId() {
+    public long getId() {
         return id;
     }
 
@@ -40,7 +40,7 @@ public class PassengerEntity implements Serializable {
         this.lastname = lastname;
     }
 
-    public void setId(int id) {
+    public void setId(long id) {
         this.id = id;
     }
 }

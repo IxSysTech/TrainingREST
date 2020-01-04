@@ -48,6 +48,19 @@ public class FlightApiController implements FlightApi {
         return ResponseEntity.status(404).body("No flight found");
     }
 
+    public ResponseEntity<Object> updateFlightById(@ApiParam(value = "flight id",required=true) @PathVariable("id") Integer id,@ApiParam(value = "" ,required=true )  @Valid @RequestBody Flight flight) {
+        Optional<FlightEntity> flightEntity = flightRepository.findById((long)id);
+        if(flightEntity.isPresent()){
+            flightEntity.get().setStart(flight.getStart());
+            flightEntity.get().setEnd(flight.getEnd());
+            flightEntity.get().setTime(flight.getTime());
+            flightRepository.save(flightEntity.get());
+            return ResponseEntity.status(200).body("Update succes");
+        }
+
+        return ResponseEntity.status(404).body("No flight found");
+    }
+
     private FlightEntity toFlightEntity(Flight flight) {
         FlightEntity entity = new FlightEntity();
         entity.setId(flight.getId());

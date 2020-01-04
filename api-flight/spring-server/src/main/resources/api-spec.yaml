@@ -58,6 +58,11 @@ paths:
           description: passenger id
           required: true
           type: integer
+        - in: body
+          name: Passenger
+          required: true
+          schema:
+            $ref: '#/definitions/Passenger'
       produces:
         - application/json
       responses:
@@ -136,6 +141,11 @@ paths:
           description: passenger id
           required: true
           type: integer
+        - in: body
+          name: Flight
+          required: true
+          schema:
+            $ref: '#/definitions/Flight'
       produces:
         - application/json
       responses:
@@ -144,7 +154,7 @@ paths:
           schema:
             type: object
             items:
-              $ref: '#/definitions/Passenger'
+              $ref: '#/definitions/Flight'
         404:
           description: passenger not found
   /flight/create:
