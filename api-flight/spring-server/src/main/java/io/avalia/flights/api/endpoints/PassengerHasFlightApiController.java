@@ -9,18 +9,19 @@ import io.avalia.flights.repositories.PassengerHasFlightRepository;
 import io.swagger.annotations.ApiParam;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 
 import javax.validation.Valid;
 import java.util.Optional;
-
+@Controller
 public class PassengerHasFlightApiController implements PassengerHasFlightApi {
 
     @Autowired
     PassengerHasFlightRepository passengerHasFlightRepository;
 
-    /*public ResponseEntity<Object> setPassengerHasFlight(@ApiParam(value = "" ,required=true )  @Valid @RequestBody PassengerHasFlight passengerHasFlight) {
+    public ResponseEntity<Object> setPassengerHasFlight(@ApiParam(value = "" ,required=true )  @Valid @RequestBody PassengerHasFlight passengerHasFlight) {
         PassengerHasFlightEntity passengerHasFlightEntity = toPassengerHasFlightEntity(passengerHasFlight);
         passengerHasFlightEntity = passengerHasFlightRepository.save(passengerHasFlightEntity);
 
@@ -39,7 +40,7 @@ public class PassengerHasFlightApiController implements PassengerHasFlightApi {
         }
 
         return ResponseEntity.status(404).body("No passenger has flight found");
-    }*/
+    }
 
     private PassengerHasFlightEntity toPassengerHasFlightEntity(PassengerHasFlight passengerHasFlight) {
         PassengerHasFlightEntity entity = new PassengerHasFlightEntity();
