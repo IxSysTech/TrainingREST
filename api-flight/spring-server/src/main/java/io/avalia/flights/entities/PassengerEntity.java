@@ -1,10 +1,8 @@
 package io.avalia.flights.entities;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.io.Serializable;
+import java.util.Set;
 
 @Entity
 @Table(name = "Passenger")
@@ -20,6 +18,10 @@ public class PassengerEntity implements Serializable {
     @Column(name = "lastname")
     private String lastname;
 
+    @OneToMany(fetch = FetchType.LAZY)
+    @JoinColumn(name = "Passenger_id")
+    private Set<BookingEntity> bookings;
+
     public long getId() {
         return id;
     }
@@ -32,6 +34,10 @@ public class PassengerEntity implements Serializable {
         return lastname;
     }
 
+    public Set<BookingEntity> getBookings() {
+        return bookings;
+    }
+
     public void setFirstname(String firstname) {
         this.firstname = firstname;
     }
@@ -42,5 +48,9 @@ public class PassengerEntity implements Serializable {
 
     public void setId(long id) {
         this.id = id;
+    }
+
+    public void setBookings(Set<BookingEntity> bookings) {
+        this.bookings = bookings;
     }
 }

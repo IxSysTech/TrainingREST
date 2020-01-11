@@ -33,7 +33,7 @@ public class PassengerApiController implements PassengerApi {
         return ResponseEntity.status(404).body("No flight found");
     }
 
-    public ResponseEntity<Object> createPassenger(@ApiParam(value = "" ,required=true )  @Valid @RequestBody Passenger passenger) {
+    public ResponseEntity<Object> createPassenger(@ApiParam(value = "passenger" ,required=true )  @Valid @RequestBody Passenger passenger) {
         PassengerEntity passengerEntity = toPassengerEntity(passenger);
         passengerEntity = passengerRepository.save(passengerEntity);
 

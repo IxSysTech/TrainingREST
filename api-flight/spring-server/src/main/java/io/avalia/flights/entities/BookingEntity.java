@@ -1,17 +1,15 @@
 package io.avalia.flights.entities;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.io.Serializable;
 
 @Entity
-@Table(name = "Passenger_has_Flight")
-public class PassengerHasFlightEntity implements Serializable {
+@Table(name = "Booking")
+public class BookingEntity implements Serializable {
     @Id
     @Column(name = "id")
     private long id;
+
 
     @Column(name = "Passenger_id")
     private long passengerId;
