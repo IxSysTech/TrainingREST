@@ -8,6 +8,8 @@ import io.avalia.users.api.model.User;
 import io.avalia.users.repositories.UserRepository;
 import io.swagger.annotations.ApiParam;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -17,6 +19,8 @@ import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 import javax.validation.Valid;
 import javax.validation.constraints.NotNull;
 import java.net.URI;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Optional;
 
 //@javax.annotation.Generated(value = "io.swagger.codegen.languages.SpringCodegen", date = "2017-07-26T19:36:34.802Z")
@@ -89,6 +93,12 @@ public class UsersApiController implements UserApi {
         return ResponseEntity.badRequest().body("Wrong email or password");
     }
 
+    public ResponseEntity<List<User>> getUsers(@NotNull @ApiParam(value = "Number of the page", required = true) @Valid @RequestParam(value = "number", required = true) Integer number, @NotNull @ApiParam(value = "Size of the page", required = true) @Valid @RequestParam(value = "size", required = true) Integer size) {
+        Pageable page = PageRequest.of(number, size);
+        List<UserEntity> result = userRepository.findAll(page).getContent();
+        return ResponseEntity.status(200).body(toUserList(result));
+    }
+
     private UserEntity toUserEntity(User user) {
         UserEntity entity = new UserEntity();
         entity.setEmail(user.getEmail());
@@ -109,6 +119,15 @@ public class UsersApiController implements UserApi {
         user.setIsAdmin(entity.getIsAdmin());
 
         return user;
+    }
+
+    private List<User> toUserList(List<UserEntity> list){
+        List<User> users = new ArrayList<>();
+        for(UserEntity flightEntity : list){
+            users.add(toUser(flightEntity));
+        }
+
+        return users;
     }
 
 }

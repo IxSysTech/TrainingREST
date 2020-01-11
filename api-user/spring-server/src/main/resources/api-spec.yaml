@@ -8,6 +8,30 @@ basePath: /api
 schemes:
   - http
 paths:
+  /user:
+    get:
+      description: get all users
+      operationId: getUsers
+      produces:
+        - application/json
+      parameters:
+        - in: query
+          name: number
+          description: Number of the page
+          required: true
+          type: integer
+        - in: query
+          name: size
+          description: Size of the page
+          required: true
+          type: integer
+      responses:
+        '201':
+          description: success
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/User'
   /user/{email}:
     get:
       description: get user by email
