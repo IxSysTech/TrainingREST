@@ -3,6 +3,7 @@ package io.avalia.users.api.spec.steps;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import gherkin.lexer.Pa;
 import io.avalia.users.ApiException;
 import io.avalia.users.ApiResponse;
 import io.avalia.users.api.DefaultApi;
@@ -17,30 +18,36 @@ import static org.junit.Assert.assertEquals;
  */
 public class GetUserByEmailSteps {
 
-    private Environment environment;
-    private DefaultApi api;
-
     private String userEmail;
 
-    private ApiResponse lastApiResponse;
-    private ApiException lastApiException;
-    private boolean lastApiCallThrewException;
-    private int lastStatusCode;
-
     public GetUserByEmailSteps(Environment environment) {
-        this.environment = environment;
-        this.api = environment.getApi();
+        ParentSteps.environment = environment;
+        ParentSteps.api = environment.getApi();
     }
 
-    @Given("^there is a Users server$")
-    public void thereIsAnAuthenticateServer(){
-        assertNotNull(api);
+    @Given("^I have an existing user email$")
+    public void i_have_an_existing_user_email(){
+        this.userEmail = "david.simeonovic@heig-vd.ch";
     }
 
-    @Given("^a user email$")
-    public void aEmail(){
-
+    @Given("^I have a none existing user email$")
+    public void i_have_a_none_existing_user_email(){
+        this.userEmail = "davud.simeonovic@heig-vd.ch";
     }
 
+    @When("^I GET it to the /user/email endpoint$")
+    public void i_GET_it_to_the_user_email_endpoint() throws  Throwable {
+        try{
+            ParentSteps.lastApiResponse = ParentSteps.api.getUserByEmailWithHttpInfo(userEmail);
+            ParentSteps.lastApiCallThrewException = false;
+            ParentSteps.lastApiException = null;
+            ParentSteps.lastStatusCode = ParentSteps.lastApiResponse.getStatusCode();
+        } catch (ApiException e) {
+            ParentSteps.lastApiResponse = null;
+            ParentSteps.lastApiCallThrewException = true;
+            ParentSteps.lastApiException = e;
+            ParentSteps.lastStatusCode = ParentSteps.lastApiException.getCode();
+        }
+    }
 
 }

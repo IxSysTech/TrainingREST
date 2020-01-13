@@ -78,7 +78,7 @@ public class UsersApiController implements UserApi {
     }
 
     public ResponseEntity<Object> authentication(@NotNull @ApiParam(value = "user email", required = true) @Valid @RequestParam(value = "email", required = true) String email,
-                                                 @NotNull @ApiParam(value = "user password", required = true) @Valid @RequestParam(value = "new password", required = true) String password){
+                                                 @NotNull @ApiParam(value = "user password", required = true) @Valid @RequestParam(value = "password", required = true) String password) {
         Optional<UserEntity> user = userRepository.findByEmailAndPassword(email, password);
         Algorithm algorithmHS = Algorithm.HMAC256("Zoulou");
         if(user.isPresent()){

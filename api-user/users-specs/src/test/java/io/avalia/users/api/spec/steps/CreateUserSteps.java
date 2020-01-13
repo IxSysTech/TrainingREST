@@ -1,38 +1,19 @@
 package io.avalia.users.api.spec.steps;
 
 import cucumber.api.java.en.Given;
-import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import io.avalia.users.ApiException;
-import io.avalia.users.ApiResponse;
-import io.avalia.users.api.DefaultApi;
 import io.avalia.users.api.dto.User;
 import io.avalia.users.api.spec.helpers.Environment;
 
 import java.util.Random;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotNull;
-
 public class CreateUserSteps {
-    private Environment environment;
-    private DefaultApi api;
-
     private User user;
 
-    private ApiResponse lastApiResponse;
-    private ApiException lastApiException;
-    private boolean lastApiCallThrewException;
-    private int lastStatusCode;
-
     public CreateUserSteps(Environment environment){
-        this.environment = environment;
-        this.api = environment.getApi();
-    }
-
-    @Given("^there a User API server$")
-    public void there_is_a_User_API_server() throws Throwable {
-        assertNotNull(api);
+        ParentSteps.environment = environment;
+        ParentSteps.api = environment.getApi();
     }
 
     @Given("^I have a user payload$")
@@ -48,35 +29,30 @@ public class CreateUserSteps {
     @When("^I POST it to the /user endpoint with an admin user$")
     public void i_POST_it_to_the_users_endpoint_with_an_admin_user() throws  Throwable {
         try{
-            this.lastApiResponse = api.createUserWithHttpInfo("david.simeonovic@heig-vd.ch","password", user);
-            this.lastApiCallThrewException = false;
-            this.lastApiException = null;
-            this.lastStatusCode = lastApiResponse.getStatusCode();
+            ParentSteps.lastApiResponse = ParentSteps.api.createUserWithHttpInfo("david.simeonovic@heig-vd.ch","password", user);
+            ParentSteps.lastApiCallThrewException = false;
+            ParentSteps.lastApiException = null;
+            ParentSteps.lastStatusCode = ParentSteps.lastApiResponse.getStatusCode();
         } catch (ApiException e) {
-            this.lastApiResponse = null;
-            this.lastApiCallThrewException = true;
-            this.lastApiException = e;
-            this.lastStatusCode = lastApiException.getCode();
+            ParentSteps.lastApiResponse = null;
+            ParentSteps.lastApiCallThrewException = true;
+            ParentSteps.lastApiException = e;
+            ParentSteps.lastStatusCode = ParentSteps.lastApiException.getCode();
         }
     }
 
     @When("^I POST it to the /user endpoint with a none admin user$")
     public void i_POST_it_to_the_users_endpoint_with_a_none_admin_user() throws  Throwable {
         try{
-            this.lastApiResponse = api.createUserWithHttpInfo("fake@john.dos","Passwürd", user);
-            this.lastApiCallThrewException = false;
-            this.lastApiException = null;
-            this.lastStatusCode = lastApiResponse.getStatusCode();
+            ParentSteps.lastApiResponse = ParentSteps.api.createUserWithHttpInfo("fake@john.dos","Passwürd", user);
+            ParentSteps.lastApiCallThrewException = false;
+            ParentSteps.lastApiException = null;
+            ParentSteps.lastStatusCode = ParentSteps.lastApiResponse.getStatusCode();
         } catch (ApiException e) {
-            this.lastApiResponse = null;
-            this.lastApiCallThrewException = true;
-            this.lastApiException = e;
-            this.lastStatusCode = lastApiException.getCode();
+            ParentSteps.lastApiResponse = null;
+            ParentSteps.lastApiCallThrewException = true;
+            ParentSteps.lastApiException = e;
+            ParentSteps.lastStatusCode = ParentSteps.lastApiException.getCode();
         }
-    }
-
-    @Then("^I receive a (\\d+) status code$")
-    public void i_receive_a_status_code(int arg1) throws Throwable {
-        assertEquals(arg1, lastStatusCode);
     }
 }
