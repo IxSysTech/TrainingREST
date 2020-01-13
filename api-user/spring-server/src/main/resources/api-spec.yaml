@@ -32,22 +32,6 @@ paths:
             type: array
             items:
               $ref: '#/definitions/User'
-  /user/{email}:
-    get:
-      description: get user by email
-      operationId: getUserByEmail
-      parameters:
-        - $ref: '#/parameters/email'
-      produces:
-        - application/json
-      responses:
-        '200':
-          description: success
-          schema:
-            type: object
-            items:
-              $ref: '#/definitions/User'
-  /user/create:
     post:
       description: create a user
       operationId: createUser
@@ -74,6 +58,21 @@ paths:
           description: created
           schema:
             type: object
+  /user/{email}:
+    get:
+      description: get user by email
+      operationId: getUserByEmail
+      parameters:
+        - $ref: '#/parameters/email'
+      produces:
+        - application/json
+      responses:
+        '200':
+          description: success
+          schema:
+            type: object
+            items:
+              $ref: '#/definitions/User'
   /user/changePassword:
     post:
       description: change password
@@ -103,7 +102,7 @@ paths:
             type: object
   /user/authentication:
     post:
-      description: change password
+      description: return de jwt token after tue user authenticate
       operationId: authentication
       consumes:
         - application/json
@@ -114,7 +113,7 @@ paths:
           required: true
           type: string
         - in: query
-          name: new password
+          name: password
           description: user password
           required: true
           type: string
