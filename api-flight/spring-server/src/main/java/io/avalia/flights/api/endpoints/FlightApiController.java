@@ -82,11 +82,15 @@ public class FlightApiController implements FlightApi {
     public ResponseEntity<List<Flight>> getFlightsOfPassenger(@NotNull @ApiParam(value = "Id of the passenger", required = true) @Valid @RequestParam(value = "passenger Id", required = true) Integer passengerId) {
         Optional<PassengerEntity> passengerEntity = passengerRepository.findById((long)passengerId);
         List<FlightEntity> flights = new ArrayList<>();
+        if(passengerEntity.isPresent()) {
 
-        for(BookingEntity booking : passengerEntity.get().getBookings()){
-            flights.add(flightRepository.findById(booking.getFlightId()).get());
+            for (BookingEntity booking : passengerEntity.get().getBookings()) {
+                flights.add(flightRepository.findById(booking.getFlightId()).get());
+            }
+            return ResponseEntity.status(200).body(toFlightList(flights));
         }
-        return ResponseEntity.status(200).body(toFlightList(flights));
+
+        return ResponseEntity.status(404).body(toFlightList(flights));
     }
 
     private FlightEntity toFlightEntity(Flight flight) {

@@ -4,7 +4,6 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.When;
 import io.avalia.users.ApiException;
 import io.avalia.users.api.spec.helpers.Environment;
-import org.jetbrains.annotations.NotNull;
 
 public class ChangePasswordSteps {
     private String email;
@@ -30,7 +29,7 @@ public class ChangePasswordSteps {
         this.newPassword = "password";
     }
 
-    @When("^I POST it to the /user/changePassword endpoint\n$")
+    @When("^I POST it to the /user/changePassword endpoint$")
     public void i_POST_it_to_the_user_changePassword_endpoint() throws  Throwable {
         try{
             ParentSteps.lastApiResponse = ParentSteps.api.changePasswordWithHttpInfo(email, oldPassword, newPassword);

@@ -5,6 +5,8 @@
       <list>
         <option value="$PROJECT_DIR$/../spring-server/pom.xml" />
         <option value="$PROJECT_DIR$/../fruits-specs/pom.xml" />
+        <option value="$PROJECT_DIR$/../users-specs/pom.xml" />
+        <option value="$PROJECT_DIR$/../flight-specs/pom.xml" />
       </list>
     </option>
   </component>
