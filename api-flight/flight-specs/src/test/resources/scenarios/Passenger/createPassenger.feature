@@ -5,5 +5,5 @@ Feature: Create a passenger
 
   Scenario: Get an existing passenger
     Given I have a valid passenger payload
-    When I POST it to the /flight endpoint
+    When I POST it to the /passenger endpoint
     Then I receive a 200 status code

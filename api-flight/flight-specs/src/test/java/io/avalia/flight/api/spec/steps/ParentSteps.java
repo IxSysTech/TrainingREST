@@ -19,6 +19,7 @@ public class ParentSteps {
     public static Environment environment;
     public static DefaultApi api;
 
+    public static int passengerId;
 
     public ParentSteps(Environment environment) {
         this.environment = environment;
@@ -29,6 +30,16 @@ public class ParentSteps {
     @Given("^there a User API server$")
     public void there_is_a_User_API_server() throws Throwable {
         assertNotNull(api);
+    }
+
+    @Given("^I have an existing passenger id$")
+    public void i_have_an_existing_passenger_id() {
+        this.passengerId = 1;
+    }
+
+    @Given("^I have a none existing passenger id$")
+    public void iHaveANoneExistingPassengerId() {
+        this.passengerId = 0;
     }
 
     @Then("^I receive a (\\d+) status code$")
