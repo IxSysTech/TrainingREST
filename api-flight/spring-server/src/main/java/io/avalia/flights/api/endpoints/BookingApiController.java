@@ -3,15 +3,21 @@ package io.avalia.flights.api.endpoints;
 import io.avalia.flights.api.BookingApi;
 import io.avalia.flights.api.model.Booking;
 import io.avalia.flights.entities.BookingEntity;
+import io.avalia.flights.entities.FlightEntity;
 import io.avalia.flights.repositories.BookingRepository;
 import io.swagger.annotations.ApiParam;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.validation.Valid;
+import javax.validation.constraints.NotNull;
+import java.util.List;
 import java.util.Optional;
 @Controller
 public class BookingApiController implements BookingApi {
