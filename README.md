@@ -1,45 +1,29 @@
-# TrainingREST
+# Teaching-HEIGVD-AMT-2019-Project-Two
 
-# Build and run the Fruit microservice
-
-You can use maven to build and run the REST API implementation from the command line. After invoking the following maven goal, the Spring Boot server will be up and running, listening for connections on port 8080.
-
-```
-cd swagger/spring-server/
-mvn spring-boot:run
-```
-
-You can then access:
-
-* the [API documentation](http://localhost:8080/api/swagger-ui.html), generated from annotations in the code
-* the [API endpoint](http://localhost:8080/api/), accepting GET and POST requests
-
-You can use curl to invoke the endpoints:
-
-* To retrieve the list of fruits previously created:
+## Lancer le projet
+Afin de lancer le projet il vous faudra lancer la commande suivante 
 
 ```
-curl -X GET --header 'Accept: application/json' 'http://localhost:8080/api/fruits'
+docker-compose up --build
 ```
-
-* To create a new fruit (beware that in the live documentation, there are extra \ line separators in the JSON payload that cause issues in some shells)
-
+Ainsi les différents éléments de notre infrastructure vont se lancer et se lier. Vous pourrez suite à ça accéder à l'adresse afin d'accéder à l'interface de Traefik, vous pourrez depuis ici utiliser nos APIs
 ```
-curl -X POST --header 'Content-Type: application/json' --header 'Accept: */*' -d '{
-   "colour": "orange",
-   "kind": "orange", 
-   "size": "small", 
-   "weight": "medium" 
- }' 'http://localhost:8080/api/fruits'
- ```
-
-# Test the Fruit microservice by running the executable specification
-
-You can use the Cucumber project to validate the API implementation. Do this when the server is running.
+http://localhost:1234
+```
+Afin de lancer les tests il faudra lancer la commande
 
 ```
-cd cd swagger/fruits-specs/
-mvn clean test
+TODO
 ```
-You will see the test results in the console, but you can also open the file located in `./target/cucumber/index.html`
 
+## Table des matières
+
+[Aspect fonctionnel](https://github.com/IxSysTech/TrainingREST/blob/master/rapport/functional_aspect.md)
+
+[Détail d'implémentation](https://github.com/panticne/Teaching-HEIGVD-AMT-2019-Project-One/blob/master/markdowns/modelisation.md)
+
+[Test](https://github.com/panticne/Teaching-HEIGVD-AMT-2019-Project-One/blob/master/markdowns/test.md)
+
+[Performance](https://github.com/panticne/Teaching-HEIGVD-AMT-2019-Project-One/blob/master/markdowns/test.md)
+
+[Bug](https://github.com/panticne/Teaching-HEIGVD-AMT-2019-Project-One/blob/master/markdowns/test.md)
