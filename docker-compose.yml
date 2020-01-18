@@ -85,7 +85,7 @@ services:
         spring_profiles_active: docker
     labels:
       - "traefik.enable=true"
-      - "traefik.http.routers.flight.rule=Host(`localhost`) && PathPrefix(`/api/flight`)"
+      - "traefik.http.routers.flight.rule=Host(`localhost`) && PathPrefix(`/api/application`)"
       - "traefik.http.services.flight.loadbalancer.server.port=8080"
     #ports:
        #- "8081:8080"
