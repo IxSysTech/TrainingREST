@@ -25,7 +25,7 @@ public class BookingApiController implements BookingApi {
     @Autowired
     BookingRepository bookingRepository;
 
-    public ResponseEntity<Object> setBooking(@ApiParam(value = "booking" ,required=true )  @Valid @RequestBody Booking booking) {
+    public ResponseEntity<Object> setBooking(@ApiParam(value = "" ,required=true )  @Valid @RequestBody Booking booking) {
         BookingEntity bookingEntity = toBookingEntity(booking);
         bookingEntity = bookingRepository.save(bookingEntity);
 
@@ -36,7 +36,7 @@ public class BookingApiController implements BookingApi {
         return ResponseEntity.badRequest().body("Error during the creation");
     }
 
-    public ResponseEntity<Object> deleteBookingtById(@ApiParam(value = "Booking id",required=true) @PathVariable("id") int id) {
+    public ResponseEntity<Object> deleteBookingtById(@ApiParam(value = "Booking id",required=true) @PathVariable("id") Integer id) {
         Optional<BookingEntity> passengerHasFlightEntity = bookingRepository.findById((long)id);
         if(passengerHasFlightEntity.isPresent()){
             bookingRepository.delete(passengerHasFlightEntity.get());
