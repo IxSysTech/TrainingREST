@@ -13,4 +13,4 @@ Un passager a donc la possibilité d'obtenir tous ses vols, en supprimer un, en 
 
 La table Booking est notre table intérmédiaire qui va permettre de lier un passager à un vol. Nous avons décidé d'envoyer des payloads JSON car ce format est assez simple à comprendre et plusieurs outils permettent la traduction et c'est bien supporté par tous les navigateurs. De plus le format est assez concis : nom:valeur
 
-La pagination a été implémentée sur les méthodes getBookings
+La pagination a été implémentée sur les méthodes getBookings et getFlights car ce sont les méthodes sujettes à afficher un grand nombre d'éléments
