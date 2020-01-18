@@ -1,18 +1,18 @@
 version: '3'
 
 services:
-  proxy:
-    image: "traefik:v2.0.0-rc3"
-    container_name: "traefik"
+  reverse-proxy:
+    image: "traefik:v2.1.2"
     command:
       - "--api.insecure=true"
       - "--providers.docker=true"
       - "--providers.docker.exposedbydefault=false"
       - "--entrypoints.web.address=:80"
       - "--entrypoints.mysql.address=:3306"
+      - "--entrypoints.mysql2.address=:3307"
     ports:
       - "80:80"
-      - "1234:8080"
+      - "2020:8080"
     volumes:
       - "/var/run/docker.sock:/var/run/docker.sock:ro"
 
@@ -56,22 +56,22 @@ services:
       - '3307:3306'
     labels:
       - "traefik.enable=true"
-      - "traefik.tcp.routers.mysql.rule=HostSNI(`*`)"
-      - "traefik.tcp.routers.mysql.entrypoints=mysql"
-      - "traefik.tcp.routers.mysql.service=mysql"
-      - "traefik.tcp.services.mysql.loadbalancer.server.port=3306"    
+      - "traefik.tcp.routers.mysql2.rule=HostSNI(`*`)"
+      - "traefik.tcp.routers.mysql2.entrypoints=mysql2"
+      - "traefik.tcp.routers.mysql2.service=mysql2"
+      - "traefik.tcp.services.mysql2.loadbalancer.server.port=3307"    
     volumes:
       - ./images/database/data-user:/docker-entrypoint-initdb.d
     command: --max-allowed-packet=1000M
 
   api-user:
-    build: ./images/api-user
+    build: ./images/app/api-user
     container_name: 'api-user'
     environment:
         spring_profiles_active: docker
     labels:
       - "traefik.enable=true"
-      - "traefik.http.routers.user.rule=Host(`localhost`) && PathPrefix(`/api/user`)"
+      - "traefik.http.routers.user.rule=Host(`localhost`) && PathPrefix(`/api/jwtuser`)"
       - "traefik.http.services.user.loadbalancer.server.port=8080"
     #ports:
        #- "8080:8080"
@@ -79,7 +79,7 @@ services:
      - db-user
 
   api-flight:
-    build: ./images/api-flight
+    build: ./images/app/api-flight
     container_name: 'api-flight'
     environment:
         spring_profiles_active: docker
