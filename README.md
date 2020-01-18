@@ -1,6 +1,13 @@
 # Teaching-HEIGVD-AMT-2019-Project-Two
 
 ## Lancer le projet
+Afin de générler le million d'insertion dans la base de données il vous faudra lancer les commandes suivantes 
+
+```
+python main.py db_flight_dump.sql --rows 1000000 --output ../images/database/data-flight/flights.sql
+python main.py db_user_dump.sql --rows 1000000 --output ../images/database/data-user/users.sql
+```
+
 Afin de lancer le projet il vous faudra lancer la commande suivante 
 
 ```
