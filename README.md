@@ -27,7 +27,7 @@ TODO
 
 [Aspect fonctionnel](https://github.com/IxSysTech/TrainingREST/blob/master/rapport/functional_aspect.md)
 
-[Détail d'implémentation](https://github.com/panticne/Teaching-HEIGVD-AMT-2019-Project-One/blob/master/markdowns/modelisation.md)
+[Détail d'implémentation](https://github.com/IxSysTech/TrainingREST/blob/master/rapport/detail.md)
 
 [Test](https://github.com/panticne/Teaching-HEIGVD-AMT-2019-Project-One/blob/master/markdowns/test.md)
 
