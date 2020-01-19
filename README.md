@@ -15,13 +15,10 @@ docker-compose up --build
 ```
 Ainsi les différents éléments de notre infrastructure vont se lancer et se lier. Vous pourrez suite à ça accéder à l'adresse afin d'accéder à l'interface de Traefik, vous pourrez depuis ici utiliser nos APIs
 ```
-http://localhost:1234
+http://localhost/api/jwtuser/swagger-ui.html //Permet d'accéder à l'API User
+http://localhost/api/application/swagger-ui.html // Permet d'accéder à l'API Flight
 ```
-Afin de lancer les tests il faudra lancer la commande
-
-```
-TODO
-```
+Afin de lancer les tests il faudra lancer le projet dans Intellij
 
 ## Table des matières
 
