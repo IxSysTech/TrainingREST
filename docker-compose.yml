@@ -37,7 +37,7 @@ services:
       - "traefik.tcp.routers.mysql.service=mysql"
       - "traefik.tcp.services.mysql.loadbalancer.server.port=3306"    
     volumes:
-      - ./images/database/data-flight:/docker-entrypoint-initdb.d
+      - ./test-api/database/data-flight:/docker-entrypoint-initdb.d
     command: --max-allowed-packet=1000M
 
   db-user:
@@ -61,11 +61,11 @@ services:
       - "traefik.tcp.routers.mysql2.service=mysql2"
       - "traefik.tcp.services.mysql2.loadbalancer.server.port=3307"    
     volumes:
-      - ./images/database/data-user:/docker-entrypoint-initdb.d
+      - ./test-api/database/data-user:/docker-entrypoint-initdb.d
     command: --max-allowed-packet=1000M
 
   api-user:
-    build: ./images/app/api-user
+    build: ./test-api/app/api-user
     container_name: 'api-user'
     environment:
         spring_profiles_active: docker
@@ -79,7 +79,7 @@ services:
      - db-user
 
   api-flight:
-    build: ./images/app/api-flight
+    build: ./test-api/app/api-flight
     container_name: 'api-flight'
     environment:
         spring_profiles_active: docker
