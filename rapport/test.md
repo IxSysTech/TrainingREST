@@ -17,9 +17,3 @@ plusieurs features
 ![](images/common-features.JPG)
 
 Ces tests sont intéressants car, facilement compréhensible et permettent de voir si les modifications que l'ont fait sont toujours correctes par rapport au résultat souhaité
-
-## JMeter
-Afin de prouver l'utilité d'implémenter de la pagination nous avons effectués des tests avec JMeter. 
-En insérant 1'000'000 de données nous remarquons un gain de performance lorsque la pagination est implémentée (comme observé dans le laboratoire 1)
-
-Voir dans la rubrique performance pour plus de détails
